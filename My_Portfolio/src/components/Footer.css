@@ -1,0 +1,20 @@
+.portfolioFooter {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+
+.socialIcons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0090b0;
+  font-weight: bold;
+}
+
+.socialIcons a:hover {
+  color: #4b0011;
+}
