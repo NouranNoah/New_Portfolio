@@ -1,7 +1,7 @@
 import React from 'react';
 import './pages.css';
 import htmlicon from '../assets/html.png'
-import cssicon from '../assets/css.png'
+// import cssicon from '../assets/css.png'
 import jsicon from '../assets/js.png'
 import reacticon from '../assets/react.png'
 import giticon from '../assets/git.png'
@@ -11,7 +11,7 @@ import viticon from '../assets/Vitejs-logo.svg.png'
 export default function Tools() {
   const tools = [
     { name: 'HTML5', percent: 98, icon: htmlicon },
-    { name: 'CSS3', percent: 92, icon: cssicon },
+    // { name: 'CSS3', percent: 92, icon: cssicon },
     { name: 'JavaScript', percent: 95, icon: jsicon },
     { name: 'React.js', percent: 90, icon: reacticon },
     { name: 'Git & GitHub', percent: 90, icon: giticon },
