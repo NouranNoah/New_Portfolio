@@ -8,13 +8,40 @@
   border-top: 1px solid #ddd;
 }
 
+.socialIcons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .socialIcons a {
-  margin: 0 10px;
   text-decoration: none;
   color: #0090b0;
   font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .socialIcons a:hover {
   color: #4b0011;
+}
+
+/* ✅ Responsive Styling */
+@media (max-width: 500px) {
+  .portfolioFooter {
+    font-size: 13px;
+    padding: 15px;
+  }
+
+  .socialIcons {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .socialIcons a {
+    font-size: 15px;
+  }
 }

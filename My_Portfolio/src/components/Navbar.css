@@ -8,30 +8,37 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   color: white;
   margin-top: -2px;
+  position: relative;
 }
 
+.logo h2 {
+  margin: 0;
+}
 
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
 
-.navContent ul {
+.navLinks ul {
   display: flex;
   gap: 25px;
   list-style: none;
 }
 
-.navContent li {
+.navLinks li {
   cursor: pointer;
   font-size: 19px;
   font-weight: 500;
   transition: color 0.3s;
 }
-.navContent li:hover {
+.navLinks li:hover {
   color: #ee0038bb;
   transform: scale(1.05);
 }
 
-
-
-.navContent button {
+.navLinks button {
   padding: 10px 20px;
   background-color: white;
   color: rgb(0, 144, 176);
@@ -42,25 +49,52 @@
   transition: background-color 0.6s ease, color 0.6s ease;
 }
 
-.navContent button:hover {
+.navLinks button:hover {
   background-color: #ee0038bb;
   color: white;
 }
 
+.menuIcon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Media Query */
 @media (max-width: 768px) {
   .navContent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #0090B0;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
+    display: none;
   }
 
-  .navContent ul {
+  .navLinks.active {
+    display: flex;
+  }
+
+  .navLinks ul {
     flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 15px;
+    width: 100%;
   }
 
-  .navContent button {
-    margin-top: 10px;
+  .navLinks button {
+    margin-top: 15px;
   }
 }

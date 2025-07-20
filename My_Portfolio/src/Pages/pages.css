@@ -85,6 +85,59 @@ h1, h2, h3, h4 {
     width: 100%;
     margin-top: -4%;
 }
+@media (max-width: 768px) {
+  .homeContent {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    text-align: center;
+  }
+  
+
+  .homeContent .titleHome {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homeContent h2 {
+    font-size: 28px;
+  }
+
+  .subText {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .homeContent .titleHome button {
+    font-size: 16px;
+    padding: 8px 18px;
+    margin-top: 15px;
+  }
+
+  .homeContent .imgTitle img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .sideBar {
+    display: none; 
+  }
+
+  .groundhome {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .homeContent h2 {
+    font-size: 22px;
+  }
+
+  .subText {
+    font-size: 14px;
+  }
+}
 
 
 
@@ -137,6 +190,39 @@ h1, h2, h3, h4 {
   padding: 10px;
   width: fit-content;
 }
+@media (max-width: 768px) {
+  .servicesSection {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .serviceCard {
+    width: 90%;
+    padding: 30px 15px;
+  }
+
+  .serviceCard h3 {
+    font-size: 16px;
+  }
+
+  .serviceContent .icon {
+    font-size: 26px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .serviceCard h3 {
+    font-size: 15px;
+  }
+
+  .serviceContent .icon {
+    font-size: 22px;
+    padding: 6px;
+  }
+}
+
 
 /* ////////////////////////////////////////////////////about//////////////// */
 
@@ -207,9 +293,59 @@ h1, h2, h3, h4 {
 .downloadBtn:hover .icon {
   transform: translateY(4px);
 }
+@media (max-width: 768px) {
+  .aboutContent {
+    padding: 40px 20px;
+    margin-top: 10%;
+    border-radius: 15px;
+  }
+
+  .sectionTitle {
+    font-size: 26px;
+  }
+
+  .aboutText {
+    font-size: 16px;
+  }
+
+  .experience {
+    font-size: 18px;
+  }
+
+  .downloadBtn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .downloadBtn .icon {
+    font-size: 16px;
+    padding: 2px 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sectionTitle {
+    font-size: 22px;
+  }
+
+  .aboutText {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .downloadBtn {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .downloadBtn .icon {
+    margin-left: 0;
+  }
+}
+
 
 /* ////////////////////////////tools//////////////////////////// */
-/* pages.css */
+
 
 .toolsSection {
   text-align: center;
@@ -295,6 +431,65 @@ h1, h2, h3, h4 {
     transform: translateY(0) scale(1);
   }
 }
+@media (max-width: 768px) {
+  .toolsGrid {
+    gap: 20px;
+  }
+
+  .toolCard {
+    width: 100px;
+    padding: 20px 15px;
+    border-radius: 40px;
+  }
+
+  .toolIcon {
+    width: 70px;
+    height: 40px;
+    padding: 20px 5px;
+  }
+
+  .toolPercent {
+    font-size: 16px;
+  }
+
+  .toolName {
+    font-size: 14px;
+  }
+
+  .sectionTitle {
+    font-size: 26px;
+  }
+
+  .sectionTag {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .toolCard {
+    width: 90px;
+    padding: 15px 10px;
+  }
+
+  .toolIcon {
+    width: 60px;
+    height: 35px;
+    padding: 15px 5px;
+  }
+
+  .toolPercent {
+    font-size: 14px;
+  }
+
+  .toolName {
+    font-size: 13px;
+  }
+
+  .sectionTitle {
+    font-size: 22px;
+  }
+}
+
 
 /* ////////////////////////////////////projects /////////////////////////////////////// */
 .projectsSection {
@@ -406,6 +601,71 @@ h1, h2, h3, h4 {
 .projectLinks a:hover {
   color: #4b0011;
 }
+@media (max-width: 768px) {
+  .projectCard {
+    width: 90% !important;
+    height: auto;
+    padding: 20px;
+  }
+
+  .projectImage {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .projectTitle {
+    font-size: 20px;
+  }
+
+  .projectDesc {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 4px 10px;
+    margin-right: 6px;
+  }
+
+  .projectLinks a {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .sectionTitle {
+    font-size: 26px;
+  }
+
+  .cardsProjects.singleView {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectCard {
+    width: 95% !important;
+    padding: 15px;
+  }
+
+  .projectTitle {
+    font-size: 18px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+
+  .projectDesc {
+    font-size: 13px;
+  }
+
+  .projectLinks a {
+    font-size: 13px;
+  }
+}
 
 /* ///////////////////////////education//////////////////////////// */
 /* ===== Education & Courses Section ===== */
@@ -514,18 +774,53 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .edu-exp-grid {
     flex-direction: column;
     align-items: center;
   }
 
-  .edu-exp-card {
-    width: 100%;
+  .edu-exp-card,
+  .edu-exp-cardd {
+    width: 90%;
     max-width: 400px;
+    padding: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 26px;
+  }
+
+  .cardHeader h3 {
+    font-size: 18px;
+  }
+
+  .cardItem .title {
+    font-size: 15px;
+  }
+
+  .cardItem .subTitle {
+    font-size: 13px;
   }
 }
+@media (max-width: 480px) {
+  .edu-exp-card,
+  .edu-exp-cardd {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .cardHeader .icon {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .cardItem .date {
+    font-size: 13px;
+  }
+}
+
 
 /* //////////////////////////plane///////////////////////////// */
 .plansSection {
@@ -769,4 +1064,42 @@ h1, h2, h3, h4 {
 ul li a,button a{
     text-decoration-line: none;
     color: white;
+}
+@media (max-width: 768px) {
+  .contactContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactInfo,
+  .contactForm {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .formGroup {
+    flex-direction: column;
+  }
+
+  .contactForm {
+    height: auto;
+  }
+
+  .submitBtn {
+    align-self: center;
+  }
+
+  .sectionTitle {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .contactDescription {
+    text-align: center;
+    margin: auto;
+  }
+
+  .infoItem {
+    justify-content: center;
+  }
 }
