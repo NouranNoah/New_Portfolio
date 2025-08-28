@@ -509,12 +509,12 @@ h1, h2, h3, h4 {
 
 
 .projectCard {
-  flex: 0 0 auto; 
+  flex: 0 0 20%; 
   scroll-snap-align: start;
   background: white;
   border-radius: 20px;
   padding: 25px;
-  width: 40%;
+  width: 20%;
   height: 670px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   text-align: left;
